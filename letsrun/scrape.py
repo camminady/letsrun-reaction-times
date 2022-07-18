@@ -17,8 +17,22 @@ for event in list_event:
             try:
                 url = f"https://www.worldathletics.org/results/olympic-games/2021/the-xxxii-olympic-games-athletics-7132391/{sex}/{event}/{category}/result"
                 df_list = pd.read_html(url)
-
                 df = pd.concat(df_list)
+                df["location"] = "Tokyo"
+                df["event"] = event
+                df["sex"] = sex
+                df["category"] = category
+                all_df.append(df)
+            except Exception as e:
+                pass
+for event in list_event:
+    for sex in list_sex:
+        for category in list_category:
+            try:
+                url = f"https://www.worldathletics.org/results/world-athletics-championships/2022/world-athletics-championships-oregon-2022-7137279/{sex}/{event}/{category}/result"
+                df_list = pd.read_html(url)
+                df = pd.concat(df_list)
+                df["location"] = "Eugene"
                 df["event"] = event
                 df["sex"] = sex
                 df["category"] = category
@@ -28,5 +42,5 @@ for event in list_event:
 df = pd.concat(all_df)
 
 # %%
-df.to_csv("Tokyo.csv")
+df.to_csv("ReactionTimes.csv")
 # %%
