@@ -3,8 +3,9 @@
 
 https://www.letsrun.com/forum/flat_read.php?thread=11399611
 
-
-![Reaction Times, Eugene vs. Tokyo](/letsrun/Summary.png?raw=true "Reaction Times, Eugene vs. Tokyo")
+![Reaction Times](/results/histogram.png?raw=true "Reaction Times, Histogram.")
+![Reaction Times](/results/reactiontimes.png?raw=true "Reaction Times")
+![Reaction Times](/results/reactiontimesbox.png?raw=true "Reaction Times, Boxplot.")
 
 
 # Scrape data
