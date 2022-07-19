@@ -38,6 +38,6 @@ df.to_csv("../../data/sources-wc.csv")
 
 url = "https://www.worldathletics.org/results/olympic-games"
 df = get_summary_table(url)
-df.to_csv("../../data/sources-oly.csv")
+df.to_csv("../../data/sources/sources-oly.csv")
 
 # %%

@@ -47,5 +47,5 @@ for source in sources:
 
 # %%
 combineddf = pd.DataFrame(d)
-combineddf.to_csv("../../data/sources-combined.csv", index=False)
+combineddf.to_csv("../../data/sources/sources-combined.csv", index=False)
 # %%

@@ -3,7 +3,9 @@ import pandas as pd
 import requests
 
 # %%
-sources = pd.read_csv("/Users/thomascamminady/Dev/letsrun/data/sources-combined.csv")
+sources = pd.read_csv(
+    "/Users/thomascamminady/Dev/letsrun/data/sources/sources-combined.csv"
+)
 # %%
 all_df = []
 for (i, row) in sources.iterrows():
@@ -18,6 +20,6 @@ for (i, row) in sources.iterrows():
     except Exception as e:
         print(e)
 df = pd.concat(all_df)
-df.to_csv("../../data/reactiontimes.csv")
+df.to_csv("../../data/sources/reactiontimes.csv")
 
 # %%
