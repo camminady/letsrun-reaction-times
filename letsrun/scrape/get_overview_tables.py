@@ -34,7 +34,7 @@ def get_summary_table(url):
 
 url = "https://www.worldathletics.org/results/world-athletics-championships"
 df = get_summary_table(url)
-df.to_csv("../../data/sources-wc.csv")
+df.to_csv("../../data/sources/sources-wc.csv")
 
 url = "https://www.worldathletics.org/results/olympic-games"
 df = get_summary_table(url)

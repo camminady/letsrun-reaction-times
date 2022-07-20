@@ -7,6 +7,8 @@ sources = pd.read_csv(
     "/Users/thomascamminady/Dev/letsrun/data/sources/sources-combined.csv"
 )
 # %%
+print(len(sources))
+# %%
 all_df = []
 for (i, row) in sources.iterrows():
     print(i)
@@ -20,6 +22,6 @@ for (i, row) in sources.iterrows():
     except Exception as e:
         print(e)
 df = pd.concat(all_df)
-df.to_csv("../../data/sources/reactiontimes.csv")
+df.to_csv("../../data/reactiontimes.csv")
 
 # %%

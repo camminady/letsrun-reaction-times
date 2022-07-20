@@ -10,8 +10,8 @@ list_sex = ["women", "men"]
 list_category = ["preliminary-round", "heats", "semi-final", "final"]
 
 sources = [
-    "/Users/thomascamminady/Dev/letsrun/data/sources-oly.csv",
-    "/Users/thomascamminady/Dev/letsrun/data/sources-wc.csv",
+    "/Users/thomascamminady/Dev/letsrun/data/sources/sources-oly.csv",
+    "/Users/thomascamminady/Dev/letsrun/data/sources/sources-wc.csv",
 ]
 
 d = []
