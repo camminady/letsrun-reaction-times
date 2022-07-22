@@ -11,7 +11,7 @@ df["year"] = [int(x.split(" ")[-1]) for x in df.date.values]
 
 df.loc[df["Reaction Time"] == "0.-91", "Reaction Time"] = ""
 # df = df.drop(index=3865)
-df["reaction_time_float"] = pd.to_numeric(df["Reaction Time"])  # , errors="ignore")
+df["reaction_time_float"] = pd.to_numeric(df["Reaction Time"], errors="ignore")
 df["Sex"] = df.sex
 df = df[df.year >= 1999]
 df = df[df.reaction_time_float >= 0]
