@@ -5,7 +5,7 @@ from rich import print
 # %%
 
 
-list_event = ["100-metres", "100-metres-hurdles", "110-metres-hurdles"]
+list_event = ["100-metres", "100-metres-hurdles", "110-metres-hurdles", "200-metres"]
 list_sex = ["women", "men"]
 list_category = ["preliminary-round", "heats", "semi-final", "final"]
 
